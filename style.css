@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 20px;
+    display: inline-block;
+    margin-top: 20px;
+    width: 200px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.cart-sidebar {
+    width: 300px;
+    height: 100%;
+    background-color: #f4f4f4;
+    position: fixed;
+    top: 0;
+    right: -300px; /* Awalnya tersembunyi di luar layar */
+    transition: 0.3s;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+}
+
+.cart-sidebar.active {
+    right: 0; /* Ketika sidebar aktif, posisinya berada di layar */
+}
+
+#cart-items {
+    margin-bottom: 20px;
+}
+
+#open-cart {
+    margin-top: 20px;
+}
+
+.quantity-selector {
+    display: inline-block;
+}
+
+.quantity-input {
+    width: 30px;
+    text-align: center;
+    border: none;
+    font-size: 16px;
+}
+
+button {
+    font-size: 16px;
+}
